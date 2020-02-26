@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+
+	<bean id="beanOgrenci" class="com.furkankara.Ogrenci">
+		<property name="ogrenclist">
+			<list>
+				<value>Ali Can</value>
+				<value>Veli Can</value>
+				<value>Ahmet Can</value>
+			</list>
+		</property>
+		<property name="ogrenciSet">
+			<set>
+				<value>Burak Kabasakal</value>
+				<value>Burak Güvenç</value>
+			</set>
+		</property>
+		<property name="ogrenciMap">
+			<map>
+				<entry key="1" value="Hasan Bayat"></entry>
+				<entry key="2" value="Ahmet Bak"></entry>
+				<entry key="3" value="Semih Deli"></entry>
+			</map>
+		</property>
+		<property name="ogrenciProperties">
+			<props>
+				<prop key="Sevecen">Kategori 1</prop>
+				<prop key="Hoşgörülü">Kategori 2</prop>
+			</props>
+		</property>
+	</bean>
+</beans>
